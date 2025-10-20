@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <div class="home">
+    <h3>Cadastrar</h3>
+   
+          <div  id="sendMsg">
+        <input type="text" id="locali" placeholder="local onde você trabalha"/>
+    <input type="number" id="contacto" placeholder="numero"/>
+     <input type="text" id="detalhes" placeholder="localização detalhada"/>
+            
+     <select type="number" id="disponi" placeholder="Sua disponibilidade">
+       <option value="Segunda-feira a sexta">segunda-feira a sexta</option>
+          <option value="Segunda-feira a sabado">segunda-feira a sabado</option>
+   <option value="Sempre">sempre</option>
+     </select>
+        <input type="submit" id="msgBtn" value="Salvar" 
+            onclick="module.sendMsg()"/> 
+          </div>
+  </div>
+   <div style="display: none;"id="contact"class="cont"></div>
+  <!--firebase--->
+    <script>
+        module = {};
+    </script>
+      <script type="module" src="ele.js"></script>
+
+</!--firebase--->
+</body>
+</html>
