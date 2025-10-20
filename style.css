@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home{
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  text-decoration-color: aqua;
+  text-align: center;
+  background: #222;
+}
+p{
+  width: 60%;
+  border-radius: 7px;
+  background: darksalmon;
+}
+h3{
+  font-size: 1.3rem;
+  color: cadetblue;
+}
+.op{
+  width: 100%;
+}
+button{
+  width:100%;
+  height: 30px;
+  
+  margin-bottom: 10px;
+}
+/*mecanico*/
+#sendMsg{
+  border: 1px solid blue;
+  background: silver;align-self: 
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  
+}
+select,
+input{
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  width: 100%;
+ padding: 4px; 
+  text-decoration-color: none;
+  border: 1px solid silver;
+}
+#msgBtn{
+  background: darkcyan;
+  text-decoration-color: none;
+}
+
+.op {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+h2{
+  font-size: 1.9rem;
+  
+  background-image: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+ 
+
+.op button{
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  
+}
+.op button:hover{
+  border: 1px solid limegreen;
+}
+.progresso {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra-progresso {
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.5s;
+}
