@@ -7,25 +7,34 @@
   <title>Hello, World!</title>
 </head>
 <body>
-  <div class="home">
+  <div class="corpo">
+  <div id="pin-div">
+    <input id="pin-input" type="password" placeholder="Digite o PIN">
+    <button id="entrar-btn">Entrar</button>
+  </div>
+    <div  id="infoP" class="infoPin">
+      <h2>Use este PIN: <strong>1234</strong></h2>
+    </div>
+  </div>
+  <div id="conteudo" style="display: none;"class="home">
     <h2>Bem-vindo </h2>
     <p>a Devpai tech mz</p>
     <h3>Escolha uma opção</h3>
     <div class="op">
       <button id="botao">Mecanico <strong>Gratis</strong></button>
-      <button>Eletrecista
+      <button id="btn2">Eletrecista auto<strong>Gratis</strong>
       </button>
       <button>Guicho</button>
       <button id="botao">Clique aqui</button>
 <div id="progresso" class="progresso">
   <div id="barra-progresso" class="barra-progresso"></div>
-</div>
-
     </div>
     
   </div>
+  </div>
   <script>
   const botao = document.getElementById('botao');
+  const btn2 = document.getElementById('btn2');
 const barraProgresso = document.getElementById('barra-progresso');
 
 botao.addEventListener('click', () => {
@@ -41,7 +50,41 @@ botao.addEventListener('click', () => {
     }
   }, 100);
 });
+  btn2.addEventListener('click',() => {
+    let largura = 0;
+    const intervalo = setInterval(() =>{
+      if (largura >= 100){
+        clearInterval(intervalo);
+        window.location.href ='ele.html';
+      }else{
+        largura += 10;
+        barraProgresso.style.width = largura + '%';
+      }
+    }, 100);
+  });
   
+      // PIN correto
+    const pinCorreto = '1234';
+
+    // Elementos do DOM
+    const pinDiv = document.getElementById('pin-div');
+    const pinInput = document.getElementById('pin-input');
+    const entrarBtn = document.getElementById('entrar-btn');
+    const conteudoDiv = document.getElementById('conteudo');
+const infoP = document.getElementById('infoP');
+
+    // Evento de clique no botão Entrar
+    entrarBtn.addEventListener('click', () => {
+      const pinDigitado = pinInput.value;
+      if (pinDigitado === pinCorreto) {
+        pinDiv.style.display = 'none';
+        infoP.style.display = 'none';
+        conteudoDiv.style.display = 'block';
+      } else {
+        alert('PIN incorreto!');
+      }
+    });
+
   </script>
 </body>
 </html>
