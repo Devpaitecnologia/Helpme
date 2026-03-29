@@ -3,7 +3,8 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
         import { getDatabase, ref, set, remove, onChildAdded, onChildRemoved } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
-    const firebaseConfig = {
+  
+  const firebaseConfig = {
     apiKey: "AIzaSyDhURTGDUqOuuvbClVqMRiEcYYvfDt_FPU",
     authDomain: "code-fb13e.firebaseapp.com",
     projectId: "code-fb13e",
@@ -21,13 +22,14 @@
       var msgd = document.getElementById('detalhes');
      var msgdi = document.getElementById('disponi');
      
-        var sender;
-        if(sessionStorage.getItem('sender')){
+var sender = document.getElementById('nome');
+   
+     /*   if(sessionStorage.getItem('sender')){
             sender = sessionStorage.getItem('sender');
         } else {
             sender = prompt('INSIRA O SEU NOME');
             sessionStorage.setItem('sender',sender);
-        }
+        }*/
       // TO SEND MESSAGES
         module.sendMsg = function sendMsg(){
             var lc = locali.value;
