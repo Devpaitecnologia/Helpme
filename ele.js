@@ -22,7 +22,7 @@
       var msgd = document.getElementById('detalhes');
      var msgdi = document.getElementById('disponi');
      
-var sender= document.getElementById('nome');
+var sende = document.getElementById('nome');
    
      /*   if(sessionStorage.getItem('sender')){
             sender = sessionStorage.getItem('sender');
