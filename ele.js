@@ -35,7 +35,7 @@ var sender = document.getElementById('nome');
             var lc = locali.value;
             var mn = msgn.value;
             var md = msgd.value;
-         var mdi = sender.value;
+         var sender = sender.value;
          var mdi = msgdi.value;
             var timestamp = new Date().getTime();
             set(ref(db,"messag/"+timestamp),{
