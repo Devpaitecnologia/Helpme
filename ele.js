@@ -22,7 +22,7 @@
       var msgd = document.getElementById('detalhes');
      var msgdi = document.getElementById('disponi');
      
-var sender = document.getElementById('nome');
+var sender= document.getElementById('nome');
    
      /*   if(sessionStorage.getItem('sender')){
             sender = sessionStorage.getItem('sender');
@@ -35,7 +35,7 @@ var sender = document.getElementById('nome');
             var lc = locali.value;
             var mn = msgn.value;
             var md = msgd.value;
-         var sender = sender.value;
+         var sender = sende.value;
          var mdi = msgdi.value;
             var timestamp = new Date().getTime();
             set(ref(db,"messag/"+timestamp),{
